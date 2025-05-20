@@ -76,7 +76,8 @@ export const addPeminjaman = async (req, res) => {
         // );
 
         const allPeminjaman = await sequelize.query(
-            `INSERT INTO tb_peminjaman SET uuid_peminjaman=:uuid,qty=:qty,tanggal_pinjam=:tanggal_pinjam,tanggal_kembali=:tanggal_kembali,id_anggota=:id_anggota,id_buku=:id_buku,id_petugas=:id_petugas,createdAt=:CreatedAt,updatedAt=:UpdatedAt`,
+            `INSERT INTO tb_peminjaman
+             SET uuid_peminjaman=:uuid,qty=:qty,tanggal_pinjam=:tanggal_pinjam,tanggal_kembali=:tanggal_kembali,id_anggota=:id_anggota,id_buku=:id_buku,id_petugas=:id_petugas,createdAt=:CreatedAt,updatedAt=:UpdatedAt`,
             {
                 replacements: {
                     uuid: uuidv4(),
@@ -156,7 +157,15 @@ export const updateOnePeminjaman = async (req, res) => {
             throw error;
         }
         const peminjaman = await sequelize.query(
-            `UPDATE tb_peminjaman SET qty=:qty,tanggal_pinjam=:tanggal_pinjam,tanggal_kembali=:tanggal_kembali,id_anggota=:id_anggota,id_buku=:id_buku,id_petugas=:id_petugas,updatedAt=:UpdatedAt WHERE uuid_peminjaman=:uuid`,
+            `UPDATE tb_peminjaman
+             SET qty=:qty,
+                 tanggal_pinjam=:tanggal_pinjam,
+                 tanggal_kembali=:tanggal_kembali,
+                 id_anggota=:id_anggota,
+                 id_buku=:id_buku,
+                 id_petugas=:id_petugas,
+                 updatedAt=:UpdatedAt
+             WHERE uuid_peminjaman = :uuid`,
             {
                 replacements: {
                     uuid: uuid,

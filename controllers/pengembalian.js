@@ -75,7 +75,8 @@ export const addPengembalian = async (req, res) => {
         // );
 
         const add = await sequelize.query(
-            `INSERT INTO tb_pengembalian SET uuid_pengembalian=:uuid,qty=:qty,tanggal_pengembalian=:tanggal_pengembalian,id_anggota=:id_anggota,id_buku=:id_buku,id_petugas=:id_petugas,createdAt=:CreatedAt,updatedAt=:UpdatedAt`,
+            `INSERT INTO tb_pengembalian
+             SET uuid_pengembalian=:uuid,qty=:qty,tanggal_pengembalian=:tanggal_pengembalian,id_anggota=:id_anggota,id_buku=:id_buku,id_petugas=:id_petugas,createdAt=:CreatedAt,updatedAt=:UpdatedAt`,
             {
                 replacements: {
                     uuid: uuidv4(),
@@ -153,7 +154,14 @@ export const updateOnePengembalian = async (req, res) => {
             throw error;
         }
         const pengembalian = await sequelize.query(
-            `UPDATE tb_pengembalian SET qty=:qty,tanggal_pengembalian=:tanggal_pengembalian,id_anggota=:id_anggota,id_buku=:id_buku,id_petugas=:id_petugas,updatedAt=:UpdatedAt WHERE uuid_pengembalian=:uuid `,
+            `UPDATE tb_pengembalian
+             SET qty=:qty,
+                 tanggal_pengembalian=:tanggal_pengembalian,
+                 id_anggota=:id_anggota,
+                 id_buku=:id_buku,
+                 id_petugas=:id_petugas,
+                 updatedAt=:UpdatedAt
+             WHERE uuid_pengembalian = :uuid `,
             {
                 replacements: {
                     uuid: uuid,

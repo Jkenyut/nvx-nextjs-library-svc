@@ -16,12 +16,6 @@ import LoginPage from "./LoginPage";
 // }
 
 async function Home() {
-    //   const data = {
-    //     username: "okefoe",
-    //     password: "ifneifn",
-    //   };
-    //   const hasil = await getData(data);
-
     return (
         <div>
             <LoginPage/>
