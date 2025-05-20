@@ -1,38 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nvx-nextjs-library
 
-## Getting Started
+**nvx-nextjs-library** is a modern, reusable component library designed for seamless integration
+with [Next.js](https://nextjs.org/) applications. It provides a collection of customizable React components to
+accelerate your development workflow.
 
-First, run the development server:
+## Features
+
+- ⚡️ Modern, production-ready React components
+- 🛠️ Built with TypeScript for type safety
+- 🔌 Effortless integration with Next.js projects
+- 📚 Comprehensive documentation and usage examples
+
+## Installation
 
 ```bash
-npm run dev
+npm install nvx-nextjs-library
 # or
-yarn dev
-# or
-pnpm dev
+yarn add nvx-nextjs-library
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Import components directly into your Next.js project:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```tsx
+import {MyComponent} from 'nvx-nextjs-library';
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+export default function Page() {
+    return <MyComponent/>;
+}
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Local Development
 
-## Learn More
+To develop or test components locally:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Visit [http://localhost:3000](http://localhost:3000) to view the example application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Contributions are highly appreciated! To contribute:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Fork this repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes with clear messages.
+4. Push your branch:
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. Open a pull request describing your changes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Please ensure your code adheres to the project's coding standards and includes relevant tests and documentation.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/license/mit). See the `LICENSE` file for
+details.
+
+## Contact
+
+For questions, suggestions, or feedback, please contact:
+
+**Satria Nur Saputro**  
+Email: [satrianursaputro06@gmail.com](mailto:satrianursaputro06@gmail.com)

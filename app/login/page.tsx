@@ -1,6 +1,3 @@
-import Image from "next/image";
-import { getCookies, getCookie, setCookie, deleteCookie } from "cookies-next";
-import Cookies from "js-cookie";
 import React from "react";
 import LoginPage from "./LoginPage";
 // async function getData(data: object) {
@@ -19,17 +16,17 @@ import LoginPage from "./LoginPage";
 // }
 
 async function Home() {
-  //   const data = {
-  //     username: "okefoe",
-  //     password: "ifneifn",
-  //   };
-  //   const hasil = await getData(data);
+    //   const data = {
+    //     username: "okefoe",
+    //     password: "ifneifn",
+    //   };
+    //   const hasil = await getData(data);
 
-  return (
-    <div>
-      <LoginPage />
-    </div>
-  );
+    return (
+        <div>
+            <LoginPage/>
+        </div>
+    );
 }
 
 export default Home;
