@@ -1,73 +1,119 @@
-# nvx-nextjs-library
+# NVX Next.js Library
 
-**nvx-nextjs-library** is a modern, reusable component library designed for seamless integration
-with [Next.js](https://nextjs.org/) applications. It provides a collection of customizable React components to
-accelerate your development workflow.
+<h3 align="center">🧩 A Modern & Reusable Component Library for Next.js 🧩</h3>
 
-## Features
+<p align="center">
+  A collection of production-ready, customizable, and type-safe React components designed to accelerate your Next.js development workflow.
+</p>
 
-- ⚡️ Modern, production-ready React components
-- 🛠️ Built with TypeScript for type safety
-- 🔌 Effortless integration with Next.js projects
-- 📚 Comprehensive documentation and usage examples
+<p align="center">
+  <!-- Badges/Shields -->
+  
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
+  <img src="https://img.shields.io/badge/Next.js-14-black?logo=next.js" alt="Next.js">
+  <img src="https://img.shields.io/badge/React-18-blue?logo=react" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-5.x-blue?logo=typescript" alt="TypeScript">
+</p>
 
-## Installation
 
+---
+
+## About The Project
+
+**nvx-nextjs-library-svc** is a modern component library built from the ground up for seamless integration with Next.js applications. It provides a curated collection of high-quality, reusable React components that follow best practices for performance, accessibility, and developer experience. By handling the boilerplate, this library lets you focus on building features, not components.
+
+## ✨ Key Features
+
+-   ✅ **Seamless Next.js Integration:** Designed to work flawlessly with the App Router, Server Components, and Client Components.
+-   ✅ **Type-Safe:** Built entirely with TypeScript for a predictable and error-free development experience.
+-   ✅ **Highly Customizable:** Easily adapt components to your project's theme and design system.
+-   ✅ **Accessibility First:** Follows WAI-ARIA standards to ensure components are usable by everyone.
+-   ✅ **Tree-Shakable:** Optimized to ensure only the code you use is included in your final bundle.
+-   ✅ **Comprehensive Documentation:** (Optional) Comes with a Storybook for live previews and detailed prop documentation.
+
+## 🛠️ Tech Stack
+
+-   **Core:** [React](https://react.dev/) 18, [Next.js](https://nextjs.org/) 14
+-   **Language:** [TypeScript](https://www.typescriptlang.org/)
+-   **Styling:** (Specify your approach, e.g., CSS Modules, Tailwind CSS, Styled-components)
+-   **Bundler:** (Specify if not using Next.js default, e.g., Rollup, Vite)
+-   **Documentation:** [Storybook](https://storybook.js.org/) (Recommended)
+
+## 🚀 Getting Started
+
+### 1. Installation
+
+Install the package from npm or yarn:
 ```bash
+pnpm install nvx-nextjs-library
+# or
 npm install nvx-nextjs-library
 # or
 yarn add nvx-nextjs-library
 ```
 
-## Usage
+### 2. Usage
 
-Import components directly into your Next.js project:
+Import components directly into your Next.js pages or components.
 
 ```tsx
-import {MyComponent} from 'nvx-nextjs-library';
+// app/page.tsx
+import { Button, Card } from 'nvx-nextjs-library';
+import 'nvx-nextjs-library/dist/style.css'; // Import the default styles
 
-export default function Page() {
-    return <MyComponent/>;
+export default function HomePage() {
+  return (
+    <main>
+      <Card title="Welcome!">
+        <p>This is a card from our awesome library.</p>
+        <Button onClick={() => alert('Button Clicked!')}>
+          Click Me
+        </Button>
+      </Card>
+    </main>
+  );
 }
 ```
 
-## Local Development
+## ⚙️ Local Development
 
-To develop or test components locally:
+To contribute to the library or run the example application locally:
 
-```bash
-npm install
-npm run dev
-```
+1.  **Clone the repository:**
+    ```
+    git clone [this project]
+    cd project
+    ```
 
-Visit [http://localhost:3000](http://localhost:3000) to view the example application.
+2.  **Install dependencies:**
+    ```bash
+    pnpm install
+    ```
 
-## Contributing
+3.  **Run the development server:**
+    This will typically start a Storybook or a local Next.js example app.
+    ```bash
+    pnpm dev
+    ```
 
-Contributions are highly appreciated! To contribute:
+Visit [http://localhost:6006](http://localhost:6006) (for Storybook) or [http://localhost:3000](http://localhost:3000) (for Next.js app) to view the components.
 
-1. Fork this repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/your-feature
-   ```
-3. Commit your changes with clear messages.
-4. Push your branch:
-   ```bash
-   git push origin feature/your-feature
-   ```
-5. Open a pull request describing your changes.
+## 🤝 Contributing
 
-Please ensure your code adheres to the project's coding standards and includes relevant tests and documentation.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## License
+1.  **Fork** the Project.
+2.  Create your **Feature Branch** (`git checkout -b feature/AmazingFeature`).
+3.  **Commit** your Changes (`git commit -m 'feat: Add some AmazingFeature'`).
+4.  **Push** to the Branch (`git push origin feature/AmazingFeature`).
+5.  Open a **Pull Request**.
 
-This project is licensed under the [MIT License](https://opensource.org/license/mit). See the `LICENSE` file for
-details.
+## 📄 License
 
-## Contact
+This project is licensed under the [MIT License](https://opensource.org/license/mit). See the `LICENSE` file for more details.
 
-For questions, suggestions, or feedback, please contact:
+## 📬 Contact
 
-**Satria Nur Saputro**  
-Email: [satrianursaputro06@gmail.com](mailto:satrianursaputro06@gmail.com)
+**Satria Nur Saputro**
+
+-   Email: [satrianursaputro06@gmail.com](mailto:satrianursaputro06@gmail.com)
